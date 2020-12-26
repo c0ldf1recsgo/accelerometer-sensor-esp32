@@ -30,4 +30,9 @@ After that, you could meet some errors, you can search it on Googles to find the
 
 ## Data forwarder:
 - Input ```edge-impulse-data-forwarder``` into your Command Line.
-- If it is successful, then you have to input your Registered email and Password
+- If it is successful, then you have to input your Registered email and Password.
+- Now just follow the instruction from your Command Line.
+
+## Input Data:
+- Open EdgeImpulse and Start Sampling to add data.
+- Do whatever you want and name the label for it.
