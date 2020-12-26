@@ -22,3 +22,12 @@ After that, you could meet some errors, you can search it on Googles to find the
 - Do the samething with *Adafruit ADXL345* Libraries (by Adafruit)
 - Download 2 libraries I've uploaded on github: **ADXL345** and **I2Cdev**
 - Paste into your project with path: *your-project-name\\.pio\libdeps\lolin32\\*
+### Step 4:
+- Add code to the file *main.cpp* in folder: *your-project-name\\src\\* 
+- Find the arrow button near the bottom left of Status bar in VSCode and click it, wait for it to build.
+- Everything should be good for now, you can check the result in Arduino IDE
+- [Here](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) is how you can add ESP32 module to Arduino IDE.
+
+## Data forwarder:
+- Input ```edge-impulse-data-forwarder``` into your Command Line.
+- If it is successful, then you have to input your Registered email and Password
