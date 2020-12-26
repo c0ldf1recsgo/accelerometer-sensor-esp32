@@ -13,5 +13,12 @@ After that, you could meet some errors, you can search it on Googles to find the
 ### Step 1:
 - Click on PIO icon, you can see a multiple tab. Go to *PIO Home* **>** *Open*.
 - Click **New Project**, name whatever you want for you project, choose Board *WEMOS LOLIN 32*, let the Framework: Arduino
-- Keep Using the default location as it will save to *C:\Users\%your-user-name%\Documents\PlatformIO\Projects*.
+- Keep Using the default location as it will save to *C:\Users\\ %your-user-name%\Documents\PlatformIO\Projects*.
 - Then click Finish and wait for it to complete
+### Step 2:
+- In PIO Home, click on **Libraries** tab, search for *EloquentTinyML* (by Simone Salerno), click **Add to Project**
+- Select the project you've created before and Add.
+### Step 3:
+- Do the samething with *Adafruit ADXL345* Libraries (by Adafruit)
+- Download 2 libraries I've uploaded on github: **ADXL345** and **I2Cdev**
+- Paste into your project with path: *your-project-name\\.pio\libdeps\lolin32\\*
