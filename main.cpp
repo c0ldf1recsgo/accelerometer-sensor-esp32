@@ -13,6 +13,7 @@ Eloquent::TinyML::TfLite<NUMBER_OF_INPUTS, NUMBER_OF_OUTPUTS, TENSOR_ARENA_SIZE>
 
 Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified();
 
+// slowdown Sampling Rate
 const float kTargetHz = 125;
 const float kTargetMs = 1000.0/kTargetHz;
 
@@ -66,6 +67,7 @@ void loop() {
 
     t0 = millis();
 
+    // get the input data from sensor
     input[pos] = event.acceleration.x;
     input[pos+1] = event.acceleration.y;
     input[pos+2] = event.acceleration.z;
@@ -102,7 +104,7 @@ void ledMode(int label_num){
   int pinArray[6] = {PIN0, PIN1, PIN2, PIN3, PIN4, PIN5};
   switch (label_num)
   {
-  case 0:
+  case 0: // Blink all leds
     for(int i = 0; i < 5; i++){
       digitalWrite(PIN0, HIGH);
       digitalWrite(PIN1, HIGH);
@@ -119,7 +121,7 @@ void ledMode(int label_num){
       digitalWrite(PIN5, LOW);
     }
     break;
-  case 1:
+  case 1: // Turn on all leds
       digitalWrite(PIN0, HIGH);
       digitalWrite(PIN1, HIGH);
       digitalWrite(PIN2, HIGH);
@@ -127,7 +129,7 @@ void ledMode(int label_num){
       digitalWrite(PIN4, HIGH);
       digitalWrite(PIN5, HIGH);
     break;
-  case 2:
+  case 2: // Turn off all leds
       digitalWrite(PIN0, LOW);
       digitalWrite(PIN1, LOW);
       digitalWrite(PIN2, LOW);
@@ -135,7 +137,7 @@ void ledMode(int label_num){
       digitalWrite(PIN4, LOW);
       digitalWrite(PIN5, LOW);
     break;
-  case 3:
+  case 3: // Blink betwwen green and red leds
       for(int i = 0; i < 5; i++){
       digitalWrite(PIN0, HIGH);
       digitalWrite(PIN2, HIGH);
@@ -152,7 +154,7 @@ void ledMode(int label_num){
       digitalWrite(PIN5, HIGH);
     }
     break;
-  case 4:
+  case 4: // Leds go back and forth
       for(int i = 0; i < 5; i++){
       digitalWrite(pinArray[i], HIGH);
       delay(200);
