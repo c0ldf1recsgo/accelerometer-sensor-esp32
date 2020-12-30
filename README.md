@@ -89,16 +89,19 @@ You can get these values from file *model_metadata.h*:
 asfasf
 ### Code Explain:
 ```#include "tflite-trained.h"``` tflite-trained.h contains the array you exported from the EdgeImpulse.
+
 The ```int findMax(float output[]);``` function will find the max output value and return its position in array.
+
 The ```void ledMode(int label_num);``` function will decide which led mode will turn.
+
 ```void ledSetup();``` set up pin led.
 - Get the input data from sensor then increase the position of the input to 3
-```
+```c
 input[pos] = event.acceleration.x;
 input[pos+1] = event.acceleration.y;
 input[pos+2] = event.acceleration.z;
 pos += 3;
-```c
+```
 - If the position is bigger or equals than the number of inputs
     Reset the position to 0
     Return the output result
