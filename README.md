@@ -86,7 +86,8 @@ You can get these values from file *model_metadata.h*:
 ![image6](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image6.jpg)
 ## Finish:
 ### Video demo:
-asfasf
+[Click here](https://youtu.be/tiC87C8fD9I)
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/tiC87C8fD9I/0.jpg)](http://www.youtube.com/watch?v=tiC87C8fD9I "Demo")
 ### Code Explain:
 ```#include "tflite-trained.h"``` tflite-trained.h contains the array you exported from the EdgeImpulse.
 
