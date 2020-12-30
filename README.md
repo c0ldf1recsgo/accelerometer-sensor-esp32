@@ -87,7 +87,7 @@ You can get these values from file *model_metadata.h*:
 ## Finish:
 ### Video demo:
 [Click here](https://youtu.be/tiC87C8fD9I)
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/tiC87C8fD9I/0.jpg)](http://www.youtube.com/watch?v=tiC87C8fD9I "Demo")
+or go to this link https://youtu.be/tiC87C8fD9I
 ### Code Explain:
 ```#include "tflite-trained.h"``` tflite-trained.h contains the array you exported from the EdgeImpulse.
 
