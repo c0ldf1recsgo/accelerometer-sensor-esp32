@@ -54,6 +54,8 @@ After that, you could meet some errors, you can search it on Googles to find the
 ![image4](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image4.png)
 - After training your model, go to **Deployment**
 - Select *Arduino Library*, disable *EON Compiler* and select *Unoptimized (float 32)* then Build
+
+![image5](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image5.png)
 - You will now have a .zip file, unzip it.
 - We will need to file in the folder we've unzipped:
     - src\tflite-model\tflite-trained.h
@@ -72,8 +74,16 @@ You can get these values from file *model_metadata.h*:
 ```NUMBER_OF_OUTPUTS``` is the number of label in ```ei_classifier_inferencing_categories[]```
 - Change the PINs number to whatever you use for your Board
 - Run the file
-- Circuit
-- Real image
+- Circuit:
+
+![image9](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image9.png)
+- Real image:
+ 
+![image7](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image7.jpg)
+
+![image8](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image8.jpg)
+
+![image6](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image6.jpg)
 ## Finish:
 ### Video demo:
 asfasf
