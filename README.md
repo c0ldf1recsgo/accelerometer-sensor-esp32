@@ -41,10 +41,14 @@ After that, you could meet some errors, you can search it on Googles to find the
 
 ## Training:
 - Click on **Impulse Design** and choose how you will train it as the picture below.
-- ![image1](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image1.png)
+![image1](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image1.png)
 - Choose parameters for each block
 - *Processing block*
+![image2](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image2.png)
 - *Learning block*
+![image3](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image3.png)
+- After running the learning block you will get the result:
+![image4](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image4.png)
 - After training your model, go to **Deployment**
 - Select *Arduino Library*, disable *EON Compiler* and select *Unoptimized (float 32)* then Build
 - You will now have a .zip file, unzip it.
