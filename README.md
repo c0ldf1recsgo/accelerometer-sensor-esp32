@@ -23,7 +23,7 @@ After that, you could meet some errors, you can search it on Googles to find the
 ### Step 3:
 - Do the samething with *Adafruit ADXL345* Libraries (by Adafruit)
 ### Step 4:
-- Add code to the file *main.cpp* in folder: *your-project-name\\src\\* 
+- Add code in check_sensor.cpp to the file *main.cpp* in folder: *your-project-name\\src\\* 
 - Find the arrow button near the bottom left of Status bar in VSCode and click it, wait for it to build.
 - Everything should be good for now, you can check the result in Arduino IDE
 - [Here](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) is how you can add ESP32 module to Arduino IDE.
@@ -47,3 +47,23 @@ After that, you could meet some errors, you can search it on Googles to find the
 - *Learning block*
 - After training your model, go to **Deployment**
 - Select *Arduino Library*, disable *EON Compiler* and select *Unoptimized (float 32)* then Build
+- You will now have a .zip file, unzip it.
+- We will need to file in the folder we've unzipped:
+    - src\tflite-model\tflite-trained.h
+    - src\model-parameters\model_metadata.h
+
+## Deploy:
+- Get back to the project in Visual Studio Code, copy the file *tflite-trained.h* to *include* folder
+- Edit the *main.cpp* as in my repository
+- Change the values
+```NUMBER_OF_INPUTS```
+```NUMBER_OF_OUTPUTS```
+```TENSOR_ARENA_SIZE```
+You can get these values from file *model_metadata.h*:
+```EI_CLASSIFIER_NN_INPUT_FRAME_SIZE  ```
+```EI_CLASSIFIER_TFLITE_ARENA_SIZE```
+```NUMBER_OF_OUTPUTS``` is the number of label in ```ei_classifier_inferencing_categories[]```
+- Change the PINs number to whatever you use for your Board
+- Run the file
+- Circuit
+- Real image
