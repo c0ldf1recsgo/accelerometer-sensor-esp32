@@ -41,7 +41,7 @@ After that, you could meet some errors, you can search it on Googles to find the
 
 ## Training:
 - Click on **Impulse Design** and choose how you will train it as the picture below.
-- fgf
+- ![image1](https://github.com/c0ldf1recsgo/accelerometer-sensor-esp32/blob/main/Images/image1.png)
 - Choose parameters for each block
 - *Processing block*
 - *Learning block*
@@ -67,3 +67,7 @@ You can get these values from file *model_metadata.h*:
 - Run the file
 - Circuit
 - Real image
+## Finish:
+### Video demo:
+asfasf
+### Code Explain:
