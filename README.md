@@ -29,7 +29,7 @@ After that, you might have some errors, you can search it on Googles to find the
 - [Here](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) is how you can add ESP32 module to Arduino IDE.
 
 ## Data forwarder:
-- This will help you to collect data from your device to EdgeImpulse to train model. Skip this step if you have other way tpo collect data.
+- This will help you to collect data from your device to EdgeImpulse to train model. Skip this step if you have other way to collect data.
 - Input ```edge-impulse-data-forwarder``` into your Command Line.
 - If it is successful, then you have to input your Registered email and Password.
 - Now just follow the instruction from your Command Line.
