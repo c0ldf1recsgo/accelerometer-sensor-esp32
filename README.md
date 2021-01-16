@@ -8,7 +8,7 @@
 - Install [Node.js](https://nodejs.org/) v10 or higher on your host computer.
 - Install the CLI tools via Windows Command Line:
 ```npm install -g edge-impulse-cli```
-After that, you could meet some errors, you can search it on Googles to find the way to solve it easily.
+After that, you might have some errors, you can search it on Googles to find the way to solve it easily.
 ## Coding:
 - We are using Visual Studio Code with [PlatformIO](https://platformio.org) Extension for coding, you can use something else.
 - After install PlatformIO IDE (PIO) in VSCode, you can see PIO icon on the Activity Bar of VSCode.
